@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "588368869649",
+    "project_id": "authorization-89b3e",
+    "storage_bucket": "authorization-89b3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588368869649:android:0292eaebe85b87a13234b0",
+        "android_client_info": {
+          "package_name": "com.example.u_drive_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588368869649-u12goprooj43c3d94qqpmv24mjprhrtn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEL1iObrDJGpIB2R8Y3kkIJJHxGLrlEYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588368869649-u12goprooj43c3d94qqpmv24mjprhrtn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "588368869649-2mjgdbvjc12vmipaq5pc8amtl7p1au2h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.uDriveApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
