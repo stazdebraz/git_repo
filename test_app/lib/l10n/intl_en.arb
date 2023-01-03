@@ -1,0 +1,13 @@
+{
+ "@@locale": "en",
+ "myCodes": "My codes",
+ "allCodes": "All codes",
+ "favorites": "Favorites",
+ "car": "Car",
+ "add": "Add",
+ "myCar": "My car",
+ "myChild": "My child",
+ "myApartment": "My apartment",
+ "myWallet": "My wallet",
+ "myPhone": "My phone"
+}

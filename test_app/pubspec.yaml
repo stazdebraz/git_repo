@@ -1,0 +1,58 @@
+name: test_app
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  build_runner: ^2.3.3
+  cross_scroll: ^0.0.75
+  dio: ^4.0.6
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^0.13.5
+  intl: ^0.17.0
+  intl_utils: ^2.8.1
+  mockito: ^5.3.2
+  provider: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_intl:
+  enable: true
+  main_locale: "ru"
+  arb-dir: lib/src/localization/intl_ru.arb
+  template-arb-file: intl_ru.arb
+  output_dir: lib/src/localization/generated
+  class_name: L10n
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
