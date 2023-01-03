@@ -1,29 +1,58 @@
 {
-  "result" : {
-      {
-    "id" : 1,
-    "title" : "Моя машина",
-    "icon" : "https://cdn3.iconfinder.com/data/icons/car-icons-front-views/451/Compact_Car_Front_View-512.png"
+  "Post": {
+    "_": {
+      "items": 10
+    },
+    "cover": {
+      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+    },
+    "title": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
+    },
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "tag": {
+      "string": [
+        "one",
+        "two",
+        "three"
+      ]
+    },
+    "isDraft": {
+      "boolean": {}
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "comments": {
+      "hasMany": "Comment"
+    }
   },
-    {
-    "id" : 2,
-    "title" : "Мой ребенок",
-    "icon" : "https://i.pinimg.com/originals/1c/62/92/1c6292b7d8e5fe3808d0e36a62359b16.png"
-  },
-    {
-    "id" : 3,
-    "title" : "Моя квартира",
-    "icon" : "https://cdn-icons-png.flaticon.com/512/2541/2541835.png"
-  },
-    {
-    "id" : 4,
-    "title" : "Мой кошелек",
-    "icon" : "https://cdn-icons-png.flaticon.com/512/493/493389.png"
-  },
-    {
-    "id" : 5,
-    "title" : "Мрй телефон",
-    "icon" : "https://cdn-icons-png.flaticon.com/512/0/191.png"
+  "Comment": {
+    "_": {
+      "items": 25
+    },
+    "email": {
+      "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "post": {
+      "belongsTo": "Post"
+    }
   }
-}
 }
